@@ -131,7 +131,7 @@ class BadgeOS_LearnDash {
 		if ( !class_exists( 'BadgeOS' ) || !function_exists( 'badgeos_get_user_earned_achievement_types' ) ) {
 			return false;
 		}
-		elseif ( !class_exists( 'WooThemes_LearnDash' ) || version_compare( $GLOBALS[ 'woothemes_learndash' ]->version, '1.4.0', '<' ) ) {
+		elseif ( !class_exists( 'SFWD_LMS' ) ) {
 			return false;
 		}
 
@@ -154,7 +154,7 @@ class BadgeOS_LearnDash {
 				echo '<p>' . sprintf( __( 'BadgeOS LearnDash Add-On requires BadgeOS and has been <a href="%s">deactivated</a>. Please install and activate BadgeOS and then reactivate this plugin.', 'badgeos-learndash' ), admin_url( 'plugins.php' ) ) . '</p>';
 			}
 
-			if ( !class_exists( 'WooThemes_LearnDash' ) || version_compare( $GLOBALS[ 'woothemes_learndash' ]->version, '1.4.0', '<' ) ) {
+			if ( !class_exists( 'SFWD_LMS' ) ) {
 				echo '<p>' . sprintf( __( 'BadgeOS LearnDash Add-On requires LearnDash and has been <a href="%s">deactivated</a>. Please install and activate LearnDash and then reactivate this plugin.', 'badgeos-learndash' ), admin_url( 'plugins.php' ) ) . '</p>';
 			}
 
