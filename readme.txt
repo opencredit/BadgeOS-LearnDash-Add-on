@@ -27,19 +27,11 @@ Earned badges are Open Badge compatible and sharable via [Credly](https://credly
 
 In addition to all of the out-of-the-box features in BadgeOS core, the BadgeOS LearnDash Add-on allows you to award achievements and badges based on these additional triggers:
 
-*   **Course Enrollments:**
-
-   *   Enroll in a specific course
-   *   Enroll in any course
-   *   Enroll in a course from a specific category
-   *   Enroll in a course from any category
-
 *   **Courses:**
 
    *   Complete a specific Course
-   *   Complete any Course
-   *   Complete a course from a specific Course category
-   *   Complete a course from any Course category
+   *   Complete any Course   
+   *   Complete a course from a specific Tag
 
 *   **Lessons:**
 
@@ -50,8 +42,9 @@ In addition to all of the out-of-the-box features in BadgeOS core, the BadgeOS L
 
    *   Pass a specific Quiz
    *   Pass any Quiz
-   *   Achieve a minimum score on a specific Quiz
-   *   Achieve a minimum score on any Quiz
+   *   Achieve a minimum percent grade on a specific Quiz
+   *   Achieve a minimum percent grade on any Quiz
+   *   Fail a Quiz (i.e. useful for rewarding the passing of a previously failed quiz)
 
 **Combine LearnDash Steps with BadgeOS Steps in Defining Achievements**
 
