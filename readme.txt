@@ -19,7 +19,7 @@ The "BadgeOS LearnDash Add-on" allows learners to earn achievements and badges f
 [Get the BadgeOS plugin](http://wordpress.org/extend/plugins/badgeos/ "BadgeOS").
 [Get the LearnDash plugin](http://www.learndash.com/ "LearnDash").
 
-[BadgeOS](http://badgeos.org "BadgeOS")&trade; turns your WordPress site into an achievement and badging system. And with LearnDash enabled on your site, badges are not only awarded by activities such as making submissions, earning points, completing required achievements, and making site and community contributions, but also by completing Sensei courses, lessons, courses and quizzes. Define the achievements, organize the badge requirements any way you like, and choose from and combine a range of BadgeOS and LearnDash activity options to determine whether each task or requirement has been achieved.
+[BadgeOS](http://badgeos.org "BadgeOS")&trade; turns your WordPress site into an achievement and badging system. And with LearnDash enabled on your site, badges are not only awarded by activities such as making submissions, earning points, completing required achievements, and making site and community contributions, but also by completing LearnDash courses, lessons, courses and quizzes. Define the achievements, organize the badge requirements any way you like, and choose from and combine a range of BadgeOS and LearnDash activity options to determine whether each task or requirement has been achieved.
 
 Earned badges are Open Badge compatible and sharable via [Credly](https://credly.com/ "Credly.com"), the free web service for displaying, storing and managing lifelong achievement.
 
