@@ -8,65 +8,50 @@ Stable tag: 1.0.0
 License: GNU AGPLv3
 License URI: http://www.gnu.org/licenses/agpl-3.0.html
 
-Adds BadgeOS features to LearnDash.
+BadgeOS achievements and badges earned from a wide array of LearnDash learning management system activity.
 
 == Description ==
 
-The "BadgeOS LearnDash Add-on" integrates BadgeOS features into BuddyPress and bbPress. Site members complete achievements and earn badges based on a range of LearnDash activity and triggers. This add-on to BadgeOS also includes the ability to display badges and achievements on user profiles and activity feeds.
+The "BadgeOS LearnDash Add-on" allows learners to earn achievements and badges from virtually every course, lesson and quiz activity available in the LearnDash learning management system. When activated, BadgeOS admins will see a new "LearnDash Activity" menu in their "Required Steps" manager when editing or creating any achievement or badge.
 
-**Note:** You will need to install the free [BadgeOS plugin](http://wordpress.org/extend/plugins/badgeos/ "BadgeOS")&trade; (version 1.0.2 or higher) to use the BadgeOS LearnDash Add-on. You will also need the [BuddyPress plugin](http://wordpress.org/extend/plugins/buddypress/ "BadgeOS") v1.7 or higher installed.
+**Note:** You will need to install the free [BadgeOS plugin](http://wordpress.org/extend/plugins/badgeos/ "BadgeOS")&trade; (version 1.1 or higher) to use the BadgeOS LearnDash Add-on. You will also need the [LearnDash plugin](http://www.learndash.com "LearnDash") v1.4 or higher installed, available from LearnDash.com.
 
 [Get the BadgeOS plugin](http://wordpress.org/extend/plugins/badgeos/ "BadgeOS").
+[Get the LearnDash plugin](http://www.learndash.com/ "LearnDash").
 
-[BadgeOS](http://badgeos.org "BadgeOS")&trade; turns your WordPress site into an achievement and badging system. And with BuddyPress enabled on your site, achievements are not only awarded by demonstrating skills and knowledge, but also by participating in LearnDash activities. Define the achievements, organize the badge requirements any way you like, and choose from and combine a range of assessment and LearnDash activity options to determine whether each task or requirement has been achieved.
+[BadgeOS](http://badgeos.org "BadgeOS")&trade; turns your WordPress site into an achievement and badging system. And with LearnDash enabled on your site, badges are not only awarded by activities such as making submissions, earning points, completing required achievements, and making site and community contributions, but also by completing Sensei courses, lessons, courses and quizzes. Define the achievements, organize the badge requirements any way you like, and choose from and combine a range of BadgeOS and LearnDash activity options to determine whether each task or requirement has been achieved.
 
-Earned badges are Mozilla OBI compatible and sharable via [Credly](https://credly.com/ "Credly.com"), the free web service for recognizing and displaying lifelong achievement.
+Earned badges are Open Badge compatible and sharable via [Credly](https://credly.com/ "Credly.com"), the free web service for displaying, storing and managing lifelong achievement.
 
 **New ways to define achievements and give badges for LearnDash activity**
 
-In addition to all of the out-of-the-box features in BadgeOS core, this add-on allows you to award badges based on these additional triggers:
+In addition to all of the out-of-the-box features in BadgeOS core, the BadgeOS LearnDash Add-on allows you to award achievements and badges based on these additional triggers:
 
-*   **Profile Updates:**
+*   **Course Enrollments:**
 
-   *   Activated Account
-   *   Change Profile Avatar
-   *   Update Profile information
+   *   Enroll in a specific course
+   *   Enroll in any course
+   *   Enroll in a course from a specific category
+   *   Enroll in a course from any category
 
-* **Social Actions:**
+*   **Courses:**
 
-   *   Write an Activity Stream message
-   *   Write a Group Activity Stream message
-   *   Reply to an item in an Activity Stream
-   *   Favorite an Activity Stream item
-   *   Send a Friendship Request
-   *   Accept a Friendship Request
-   *   Send/reply to a Private Message
+   *   Complete a specific Course
+   *   Complete any Course
+   *   Complete a course from a specific Course category
+   *   Complete a course from any Course category
 
-*   **Group Actions:**
+*   **Lessons:**
 
-   *   Create a Group
-   *   Join a Group
-   *   Join a Specific Group
-   *   Invite Someone to Join a Group
-   *   Get Promoted to Group Moderator/Administrator
-   *   Promote another Group Member to Group Moderator/Administrator
+   *   Complete a specific Lesson
+   *   Complete any Lesson
 
-*   **Discussion Forum Actions:**
+*   **Quizzes:**
 
-   *   Add a New Forum Topic
-   *   Reply to a Forum Topic
-
-**Social Display of Badges and Achievements:**
-
-*   Display earned badges and achievements of any kind on user profiles
-*   Add activity updates to user Activity Stream when badges and achievements are earned
-*   Each user may share his or her earned badges on social networks via Credly
-
-**User and BadgeOS Settings:**
-
-*   BadgeOSadmin setting to select which custom BadgeOS achievement types should be displayed on user profiles
-*   BadgeOSadmin setting to select which custom BadgeOS achievement types should be displayed in Activity Streams
-*   User can adjust Credly sharing settings from LearnDash profile settings
+   *   Pass a specific Quiz
+   *   Pass any Quiz
+   *   Achieve a minimum score on a specific Quiz
+   *   Achieve a minimum score on any Quiz
 
 **Combine LearnDash Steps with BadgeOS Steps in Defining Achievements**
 
@@ -74,17 +59,16 @@ In addition to all of the out-of-the-box features in BadgeOS core, this add-on a
 *   Easily define achievements that rely on both BadgeOS required steps and LearnDash actions
 *   Easily link together one or more triggers, steps or actions into the conditions needed to earn any badge or mark an achievement.
 
-**LearnDash Badges are Sharable with Credly Integration**
+**LearnDash Badges are Lifelong Achievements with Credly Integration**
 
+*   As badges are earned on WordPress using BadgeOS and LearnDash, they can be automatically sent to Credly for lifelong storage, management, and sharing on Facebook, LinkedIn, Twitter, Mozilla Backpack, the earner's own web site, blog, or Credly profile.
+*   Badges you create in BadgeOS automatically appear and update on Credly, the home for storing and managing lifelong achievements.
 *   As with the BadgeOS core plugin, LearnDash badges are Mozilla Open Badge (OBI) compatible through integration of the "Open Credit" API by [Credly](https://credly.com/ "Credly.com"), the free web service for issuing, earning and sharing badges.
-*   Badges you create in BadgeOS automatically appear and update on Credly
-*   Use Credly iOS app to issue LearnDash badges you created on your WordPress/BuddyPress/BadgeOS site.
-*   As badges are earned on WordPress/BuddyPress, they can be automatically sent to Credly for easy sharing on Facebook, LinkedIn, Twitter, Mozilla Backpack, the earner's own web site, blog, or Credly profile.
+*   Use the Credly iOS app to issue LearnDash badges you created on your WordPress/BadgeOS/LearnDash site.
 
-= Theme Agnostic =
+**Display Badges on User Profiles with Free Community Add-on **
 
-* BadgeOS LearnDash Add-on works with just about any standard WordPress theme using BuddyPress v1.7+
-* No special hooks or theme updates are needed.
+*   Activate the free "[BadgeOS Community Add-On](http://wordpress.org/plugins/badgeos-community-add-on/ "BadgeOS Community Add-on")" and "[BuddyPress](http://wordpress.org/plugins/buddypress/ "BuddyPress")" plugins to add a range of user community functions, including the ability to display earned badges and achievements on user profiles for others to see. 
 
 
 = Extensibility and Additional BadgeOS Add-ons =
@@ -112,12 +96,11 @@ BadgeOS is made available by [Credly, LLC](https://credly.com/ "Credly web site"
 
 
 1. Upload, activate and configure the free [BadgeOS plugin](http://wordpress.org/extend/plugins/badgeos/ "BadgeOS") to WordPress.
-2. Upload, activate and configure the free [BuddyPress plugin](http://wordpress.org/extend/plugins/buddypress/ "BadgeOS") to WordPress.
+2. Upload, activate and configure the [LearnDash plugin](http://www.learndash.com/ "LearnDash") to WordPress.
 3. Upload 'badgeos-LearnDash' to the '/wp-content/plugins/' directory
 4. Activate the plugin through the 'Plugins' menu in WordPress
-5. Add LearnDash action requirements to any new or existing achievement item using the “Earn by” menu for any achievement.
-6. Edit “Achievement Types” to select options for display of earned badges in BuddyPress activity feeds and profiles.
-7. Ensure that you have entered the Credly credentials for the badge Issuer in the Credly Integration settings of BadgeOS core to enable badge sharing.
+5. Add LearnDash action requirements to any new or existing achievement item using the "Required Steps" manager, with your “Earn by” menu set to "Completing Steps."
+6. Ensure that you have entered the Credly credentials for the badge Issuer in the Credly Integration settings of BadgeOS core to enable badge sharing.
 
 == Frequently Asked Questions ==
 
