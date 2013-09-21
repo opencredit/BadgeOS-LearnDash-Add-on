@@ -2,7 +2,7 @@
 Contributors: credly, webdevstudios, sc0ttkclark
 Donate link: http://badgeos.org/contribute/donate/
 Tags: learndash, badge, badges, openbadges, credly, OBI, mozilla, open badges, achievement, award, reward, engagement, submission, nomination, API, open credit, credit
-Requires at least: WordPress 3.5 & BadgeOS 1.0.2
+Requires at least: WordPress 3.5 & BadgeOS 1.2
 Tested up to: 3.6
 Stable tag: 1.0.0
 License: GNU AGPLv3
@@ -14,7 +14,7 @@ BadgeOS achievements and badges earned from a wide array of LearnDash learning m
 
 The "BadgeOS LearnDash Add-on" allows learners to earn achievements and badges from virtually every course, lesson and quiz activity available in the LearnDash learning management system. When activated, BadgeOS admins will see a new "LearnDash Activity" menu in their "Required Steps" manager when editing or creating any achievement or badge.
 
-**Note:** You will need to install the free [BadgeOS plugin](http://wordpress.org/extend/plugins/badgeos/ "BadgeOS")&trade; (version 1.1 or higher) to use the BadgeOS LearnDash Add-on. You will also need the [LearnDash plugin](http://www.learndash.com "LearnDash") v1.4 or higher installed, available from LearnDash.com.
+**Note:** You will need to install the free [BadgeOS plugin](http://wordpress.org/extend/plugins/badgeos/ "BadgeOS")&trade; (version 1.2 or higher) to use the BadgeOS LearnDash Add-on. You will also need the [LearnDash plugin](http://www.learndash.com "LearnDash") v1.4 or higher installed, available from LearnDash.com.
 
 [Get the BadgeOS plugin](http://wordpress.org/extend/plugins/badgeos/ "BadgeOS").
 [Get the LearnDash plugin](http://www.learndash.com/ "LearnDash").
@@ -88,7 +88,7 @@ BadgeOS is made available by [Credly, LLC](https://credly.com/ "Credly web site"
 == Installation ==
 
 
-1. Upload, activate and configure the free [BadgeOS plugin](http://wordpress.org/extend/plugins/badgeos/ "BadgeOS") to WordPress.
+1. Upload, activate and configure the free [BadgeOS v1.2 (or later) plugin](http://wordpress.org/extend/plugins/badgeos/ "BadgeOS") to WordPress.
 2. Upload, activate and configure the [LearnDash plugin](http://www.learndash.com/ "LearnDash") to WordPress.
 3. Upload 'badgeos-LearnDash' to the '/wp-content/plugins/' directory
 4. Activate the plugin through the 'Plugins' menu in WordPress
