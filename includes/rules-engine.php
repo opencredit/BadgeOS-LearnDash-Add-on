@@ -187,14 +187,14 @@ function badgeos_learndash_user_deserves_learndash_step( $return, $user_id, $ach
 		elseif ( in_array( $learndash_trigger, $learndash_object_triggers ) && $triggered_object_id == $object_id ) {
 			$learndash_triggered = true;
 
-			// Forcing 1 count due to BadgeOS bug tracking triggers properly
+			// Forcing count due to BadgeOS bug tracking triggers properly
 			$requirements[ 'count' ] = 1;
 		}
 		// Category specific
 		elseif ( in_array( $learndash_trigger, $learndash_category_triggers ) && has_term( $object_id, 'post_tag', $triggered_object_id ) ) {
 			$learndash_triggered = true;
 
-			// Forcing 1 count due to BadgeOS bug tracking triggers properly
+			// Forcing count due to BadgeOS bug tracking triggers properly
 			$requirements[ 'count' ] = 1;
 		}
 
@@ -227,7 +227,7 @@ function badgeos_learndash_user_deserves_learndash_step( $return, $user_id, $ach
 			$trigger_count = badgeos_get_user_trigger_count( $user_id, $this_trigger, $site_id );
 
 			// If we meet or exceed the required number of checkins, they deserve the step
-			if ( $requirements[ 'count' ] <= $trigger_count ) {
+			if ( 1 == $requirements[ 'count' ] || $requirements[ 'count' ] <= $trigger_count ) {
 				// OK, you can pass go now
 				$return = true;
 			}

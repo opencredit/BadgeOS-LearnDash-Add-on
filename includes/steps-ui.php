@@ -320,7 +320,7 @@ function badgeos_learndash_save_step( $title, $step_id, $step_data ) {
 				$title = __( 'Completed course in any tag', 'badgeos-learndash' );
 			}
 			else {
-				$title = sprintf( __( 'Completed course in tag "%s"', 'badgeos-learndash' ), get_term( $object_id, 'course-category' )->name );
+				$title = sprintf( __( 'Completed course in tag "%s"', 'badgeos-learndash' ), get_term( $object_id, 'post_tag' )->name );
 			}
 		}
 
