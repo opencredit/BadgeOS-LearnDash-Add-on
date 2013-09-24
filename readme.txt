@@ -129,28 +129,15 @@ Thanks for asking!  Please do share back code modifications or enhancements you 
 
 1. "LearnDash Activity" joins multiple other BadgeOS methods for awarding and defining achievements.
 
-2. A wide range of BuddyPress and bbPress actions can be selected as required steps towards the completion of any BadgeOS achievement type.
+2. Make any LearnDash activity an achievement worthy of a digital badge: completing lessons, courses, quizzes and more.
 
-3. Combine BadgeOS LearnDash Add-On actions with any other BadgeOS assessment requirements to customize the required steps for any badge or achievement.
-
-4. Display select or all earned achievements and badges on the BuddyPress Activity Stream and User Profiles.
-
-5. Earned badges on your BadgeOS LearnDash site are "Open Badges" that are sharable via Credly to virtually any social network, site, blog or the Mozilla Backpack.
+3. Earned badges on your BadgeOS LearnDash site are "Open Badges" that are sharable via Credly to virtually any social network, site, blog or the Mozilla Backpack.
 
 
 == Changelog ==
 
-= 1.0.2 =
-* Fix: Fixed bug that prevented unlocking achievements attached to unlocked steps.
-* Fix: Check if group component is turned on before querying groups.
-
-= 1.0.1 =
-* New: Added .po and .mo files for internationalization
-* Updated: Check for BadgeOS version 1.0.2 or higher before activating plugin.
-* Fix: Stomped out a bug that prevented certain LearnDash triggers from unlocking steps
-
 = 1.0 =
-* BadgeOS LearnDash Add-on says "hello buddy", earns "Hello Buddy" badge.
+* BadgeOS LearnDash Add-on says "hello learndash", earns "Hello LearnDash" badge.
 
 
 == Upgrade Notice ==
