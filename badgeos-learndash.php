@@ -83,6 +83,7 @@ class BadgeOS_LearnDash {
 			'badgeos_learndash_quiz_completed_specific' => __( 'Minimum % Grade on a Quiz', 'badgeos-learndash' ),
 			'badgeos_learndash_quiz_completed_fail' => __( 'Fails Quiz', 'badgeos-learndash' ),
 			'learndash_lesson_completed' => __( 'Completed Lesson', 'badgeos-learndash' ),
+			'learndash_topic_completed' => __( 'Completed Topic', 'badgeos-learndash' ),
 			'learndash_course_completed' => __( 'Completed Course', 'badgeos-learndash' ),
 			'badgeos_learndash_course_completed_tag' => __( 'Completed Course from a Tag', 'badgeos-learndash' )
 		);
