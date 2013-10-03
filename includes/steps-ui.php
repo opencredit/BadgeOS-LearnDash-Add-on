@@ -175,7 +175,7 @@ function badgeos_learndash_step_etc_select( $step_id, $post_id ) {
 
 	// Loop through all objects
 	$objects = get_posts( array(
-		'post_type' => 'sfwd-topics',
+		'post_type' => 'sfwd-topic',
 		'post_status' => 'publish',
 		'posts_per_page' => -1
 	) );

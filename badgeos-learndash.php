@@ -5,7 +5,7 @@
  * Description: This BadgeOS add-on integrates BadgeOS features with LearnDash
  * Tags: learndash
  * Author: Credly
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author URI: https://credly.com/
  * License: GNU AGPLv3
  * License URI: http://www.gnu.org/licenses/agpl-3.0.html
