@@ -147,6 +147,7 @@ function badgeos_learndash_user_deserves_learndash_step( $return, $user_id, $ach
 			'badgeos_learndash_quiz_completed_specific',
 			'badgeos_learndash_quiz_completed_fail',
 			'learndash_lesson_completed',
+			'learndash_topic_completed',
 			'learndash_course_completed'
 		);
 
@@ -173,6 +174,9 @@ function badgeos_learndash_user_deserves_learndash_step( $return, $user_id, $ach
 			}
 			elseif ( isset( $arg_data[ 'lesson' ] ) ) {
 				$triggered_object_id = (int) $arg_data[ 'lesson' ]->ID;
+			}
+			elseif ( isset( $arg_data[ 'topic' ] ) ) {
+				$triggered_object_id = (int) $arg_data[ 'topic' ]->ID;
 			}
 			elseif ( isset( $arg_data[ 'course' ] ) ) {
 				$triggered_object_id = (int) $arg_data[ 'course' ]->ID;

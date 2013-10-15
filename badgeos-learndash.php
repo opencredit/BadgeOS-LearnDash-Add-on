@@ -5,7 +5,7 @@
  * Description: This BadgeOS add-on integrates BadgeOS features with LearnDash
  * Tags: learndash
  * Author: Credly
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author URI: https://credly.com/
  * License: GNU AGPLv3
  * License URI: http://www.gnu.org/licenses/agpl-3.0.html
@@ -83,6 +83,7 @@ class BadgeOS_LearnDash {
 			'badgeos_learndash_quiz_completed_specific' => __( 'Minimum % Grade on a Quiz', 'badgeos-learndash' ),
 			'badgeos_learndash_quiz_completed_fail' => __( 'Fails Quiz', 'badgeos-learndash' ),
 			'learndash_lesson_completed' => __( 'Completed Lesson', 'badgeos-learndash' ),
+			'learndash_topic_completed' => __( 'Completed Topic', 'badgeos-learndash' ),
 			'learndash_course_completed' => __( 'Completed Course', 'badgeos-learndash' ),
 			'badgeos_learndash_course_completed_tag' => __( 'Completed Course from a Tag', 'badgeos-learndash' )
 		);
@@ -178,6 +179,7 @@ class BadgeOS_LearnDash {
 		if ( $this->meets_requirements() ) {
 			require_once( $this->directory_path . '/includes/rules-engine.php' );
 			require_once( $this->directory_path . '/includes/steps-ui.php' );
+			require_once( $this->directory_path . '/includes/activity.php' );
 
 			$this->action_forwarding();
 		}
