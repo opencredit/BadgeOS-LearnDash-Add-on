@@ -179,6 +179,7 @@ class BadgeOS_LearnDash {
 		if ( $this->meets_requirements() ) {
 			require_once( $this->directory_path . '/includes/rules-engine.php' );
 			require_once( $this->directory_path . '/includes/steps-ui.php' );
+			require_once( $this->directory_path . '/includes/activity.php' );
 
 			$this->action_forwarding();
 		}
