@@ -53,12 +53,12 @@ function badgeos_learndash_trigger_event() {
 
 	$userID = get_current_user_id();
 
-	if ( is_array( $args ) && isset( $args[ 'user' ] ) ) {
-		if ( is_object( $args[ 'user' ] ) ) {
-			$userID = (int) $args[ 'user' ]->ID;
+	if ( is_array( $args ) && isset( $args[ 0 ] ) && isset( $args[ 0 ][ 'user' ] ) ) {
+		if ( is_object( $args[ 0 ][ 'user' ] ) ) {
+			$userID = (int) $args[ 0 ][ 'user' ]->ID;
 		}
 		else {
-			$userID = (int) $args[ 'user' ];
+			$userID = (int) $args[ 0 ][ 'user' ];
 		}
 	}
 
