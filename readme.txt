@@ -1,7 +1,7 @@
 === BadgeOS LearnDash Add-on ===
-Contributors: credly, webdevstudios, sc0ttkclark
+Contributors: learningtimes, webdevstudios, sc0ttkclark
 Donate link: http://badgeos.org/contribute/donate/
-Tags: learndash, badge, badges, openbadges, credly, OBI, mozilla, open badges, achievement, award, reward, engagement, submission, nomination, API, open credit, credit
+Tags: learndash, badge, badges, openbadges, learningtimes, OBI, mozilla, open badges, achievement, award, reward, engagement, submission, nomination, API, open credit, credit
 Requires at least: WordPress 3.5 & BadgeOS 1.2
 Tested up to: 3.6
 Stable tag: 1.0.0
@@ -74,13 +74,12 @@ In addition to all of the out-of-the-box features in BadgeOS core, the BadgeOS L
 
 = Stay Connected / Helpful Links =
 
-BadgeOS is made available by [Credly, LLC](https://credly.com/ "Credly web site"). Here are some ways to stay connected and to see what else we are up to:
+BadgeOS is made available by [LearningTimes, LLC](http://www.LearningTimes.com/ "LearningTimes web site"). Here are some ways to stay connected and to see what else we are up to:
 
 * [BadgeOS.org](http://badgeos.org/ "BadgeOS web site") - Contact Us, Video Tutorials, Examples, News
-* [Credly.com](https://credly.com/ "Credly web site") - Manage lifelong credentials that matter
-* [Credly Knowledgebase](http://support.credly.com/ "Credly FAQ and Support") - Credly FAQ
-* [Facebook](https://www.facebook.com/Credly "Credly on Facebook") - Credly on Facebook
-* [Twitter](https://twitter.com/credly "Credly on Facebook") - Credly Tweets
+* [LearningTimes](http://www.learningtimes.com/ "LearningTimes web site") - Bringing people together through engaging online conferences, events and activities.
+* [Facebook](https://www.facebook.com/LearningTimes "LearningTimes on Facebook") - LearningTimes on Facebook
+* [Twitter](https://twitter.com/LearningTimes "LearningTimes on Facebook") - LearningTimes Tweets
 * [E-Mailing List](https://http://badgeos.org/join-list/ "BadgeOS Occasional Mailing List - No spam!") - Occasional updates via e-mail
 * [GitHub](https://github.com/opencredit/badgeos "BadgeOS on GitHub") - Report issues, contribute code
 
@@ -119,10 +118,6 @@ The ideal place for bug and issue reporting is on the [GitHub](https://github.co
 = Where should I contribute code back to the project? =
 
 Thanks for asking!  Please do share back code modifications or enhancements you make for inclusion in BadgeOS core or as add-ons. (Functions that are specialized for just some users are likely best as add-on plugins to BadgeOS. We can help figure that out with you.) Visit us on [GitHub](https://github.com/opencredit/badgeos "BadgeOS on GitHub") to share your code with the BadgeOS LearnDash.
-
-= Credly is really cool. How can I learn more about it? =
-
-[Credly](https://credly.com/ "Credly web site") is the universal way to recognize, store and share life's achievements. We've integrated Credly into BadgeOS because it's downright the easiest, most fun way to collect evidence of all your achievements in one place and then share them out when and where it matters most. There are a rapidly growing number of platforms and apps that are using the Credly "Open Credit" API to enable sharable badges; the BadgeOS WordPress integration is just one great example! Visit us [Credly.com](https://credly.com "Credly on the Web") to learn more or [contact](https://credly.com/contact "Contact us") us for guidance with using the free Open Credit API in your own projects or applications.
 
 
 == Screenshots ==
