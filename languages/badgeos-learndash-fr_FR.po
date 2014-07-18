@@ -1,0 +1,175 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BadgeOS LearnDash Add-On v1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-07-18 13:11-0600\n"
+"Last-Translator: Michael Beckwith <michael.d.beckwith@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"Language: fr_FR\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# @ badgeos-learndash
+#: badgeos-learndash.php:82
+msgid "Passed Quiz"
+msgstr "Quiz réussi"
+
+# @ badgeos-learndash
+#: badgeos-learndash.php:83
+msgid "Minimum % Grade on a Quiz"
+msgstr "Au minimum, la note % sur un Quiz"
+
+# @ badgeos-learndash
+#: badgeos-learndash.php:84
+msgid "Fails Quiz"
+msgstr "Quiz Échoué"
+
+# @ badgeos-learndash
+#: badgeos-learndash.php:85
+msgid "Completed Lesson"
+msgstr "Leçon Complétée"
+
+# @ badgeos-learndash
+#: badgeos-learndash.php:86
+msgid "Completed Course"
+msgstr "Cours Complété"
+
+# @ badgeos-learndash
+#: badgeos-learndash.php:87
+msgid "Completed Course from a Tag"
+msgstr "Cours complété à partir d'un Mot-Clé"
+
+# @ badgeos-learndash
+#: badgeos-learndash.php:155
+#, php-format
+msgid ""
+"BadgeOS LearnDash Add-On requires BadgeOS and has been <a href=\"%s"
+"\">deactivated</a>. Please install and activate BadgeOS and then reactivate "
+"this plugin."
+msgstr ""
+"BadgeOS LearnDash Add-On requiert BadgeOS et a été <a href=\"%s\">désactivé</"
+"a>. Installez et activez BadgeOS, puis réactivez ce plugin."
+
+# @ badgeos-learndash
+#: badgeos-learndash.php:159
+#, php-format
+msgid ""
+"BadgeOS LearnDash Add-On requires LearnDash and has been <a href=\"%s"
+"\">deactivated</a>. Please install and activate LearnDash and then "
+"reactivate this plugin."
+msgstr ""
+"BadgeOS LearnDash Add-On requiert LearnDash et a été <a href=\"%s"
+"\">désactivé</a>. Installez et activez LearnDash, pus réactiver ce plugin."
+
+# @ badgeos
+#: includes/rules-engine.php:82
+#, php-format
+msgid "%1$s triggered %2$s (%3$dx)"
+msgstr "%1$s déclenché %2$s (%3$dx)"
+
+# @ badgeos-learndash
+#: includes/steps-ui.php:47
+msgid "LearnDash Activity"
+msgstr "Activité LearnDash"
+
+# @ badgeos-learndash
+#: includes/steps-ui.php:67
+msgid "Select a LearnDash Trigger"
+msgstr "Sélectionnez un Déclencheur LearnDash"
+
+# @ badgeos-learndash
+#: includes/steps-ui.php:115
+msgid "Any Quiz"
+msgstr "N'importe quel Quiz"
+
+# @ badgeos-learndash
+#: includes/steps-ui.php:150
+msgid "Any Lesson"
+msgstr "N'importe quelle Leçon"
+
+# @ badgeos-learndash
+#: includes/steps-ui.php:174
+msgid "Any Course"
+msgstr "N'importe quel Cours"
+
+# @ badgeos-learndash
+#: includes/steps-ui.php:198
+msgid "Any Course Tag"
+msgstr "N'importe quel Mot-Clé de Cours"
+
+# @ badgeos-learndash
+#: includes/steps-ui.php:254
+msgid "Completed any quiz"
+msgstr "Compléter n'importe quel Quiz"
+
+# @ badgeos-learndash
+#: includes/steps-ui.php:257
+#, php-format
+msgid "Completed quiz \"%s\""
+msgstr "Compléter le quiz \"%s\""
+
+# @ badgeos-learndash
+#: includes/steps-ui.php:268
+#, php-format
+msgid "Completed any quiz with a score of %d or higher"
+msgstr "Compléter n'importe quel quiz avec un score de %d ou plus"
+
+# @ badgeos-learndash
+#: includes/steps-ui.php:271
+#, php-format
+msgid "Completed quiz \"%s\" with a score of %d or higher"
+msgstr "Compléter le quiz \"%s\" avec un score de %d ou plus"
+
+# @ badgeos-learndash
+#: includes/steps-ui.php:281
+msgid "Failed any quiz"
+msgstr "Échouer n'importe quel quiz"
+
+# @ badgeos-learndash
+#: includes/steps-ui.php:284
+#, php-format
+msgid "Failed quiz \"%s\""
+msgstr "Échouer le quiz \"%s\""
+
+# @ badgeos-learndash
+#: includes/steps-ui.php:294
+msgid "Completed any lesson"
+msgstr "Compléter n'importe quelle leçon"
+
+# @ badgeos-learndash
+#: includes/steps-ui.php:297
+#, php-format
+msgid "Completed lesson \"%s\""
+msgstr "Compléter la leçon \"%s\""
+
+# @ badgeos-learndash
+#: includes/steps-ui.php:307
+msgid "Completed any course"
+msgstr "Compléter n'importe quel cours"
+
+# @ badgeos-learndash
+#: includes/steps-ui.php:310
+#, php-format
+msgid "Completed course \"%s\""
+msgstr "Compléter le cours \"%s\""
+
+# @ badgeos-learndash
+#: includes/steps-ui.php:320
+msgid "Completed course in any tag"
+msgstr "Compléter un cours avec n'importe quel mot-clé"
+
+# @ badgeos-learndash
+#: includes/steps-ui.php:323
+#, php-format
+msgid "Completed course in tag \"%s\""
+msgstr "Compléter un cours avec le mot-clé \"%s\""
