@@ -479,6 +479,9 @@ function badgeos_learndash_step_js() {
 					trigger_parent.find( '.required-count' )
 						.val( '1' )
 						.prop( 'disabled', true );
+				} else {
+					trigger_parent.find( '.required-count' )
+						.prop( 'disabled', false );
 				}
 		}
 	</script>
