@@ -394,7 +394,8 @@ function badgeos_learndash_step_js() {
 					trigger_type.siblings( '.select-learndash-trigger' ).show().change();
 				}
 				else {
-					trigger_type.siblings( '.select-learndash-trigger' ).hide().change();
+					$( '.select-learndash-trigger, .select-quiz-id, .select-lesson-id, .select-topic-id, .select-course-id, .select-course-category-id' ).hide();
+					$( '.input-quiz-grade-wrap').hide();
 				}
 
 			} );
