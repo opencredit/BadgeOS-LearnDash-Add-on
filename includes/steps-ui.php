@@ -143,7 +143,7 @@ function badgeos_learndash_step_etc_select( $step_id, $post_id ) {
 	if ( empty( $grade ) )
 		$grade = 100;
 
-	echo '<span><input name="badgeos_learndash_quiz_grade" class="input-quiz-grade" type="text" value="' . $grade . '" size="3" maxlength="3" placeholder="100" />%</span>';
+	echo '<span class="input-quiz-grade-wrap"><input name="badgeos_learndash_quiz_grade" class="input-quiz-grade" type="text" value="' . $grade . '" size="3" maxlength="3" placeholder="100" />%</span>';
 
 	// Lessons
 	echo '<select name="badgeos_learndash_lesson_id" class="select-lesson-id">';
