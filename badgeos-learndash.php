@@ -77,6 +77,9 @@ class BadgeOS_LearnDash {
 		// If BadgeOS is unavailable, deactivate our plugin
 		add_action( 'admin_notices', array( $this, 'maybe_disable_plugin' ) );
 
+		// Load translations
+		load_plugin_textdomain( 'badgeos-learndash', false, dirname( $this->basename ) . '/languages/' );
+
 		// LearnDash Action Hooks
 		$this->triggers = array(
 			'learndash_quiz_completed' => __( 'Passed Quiz', 'badgeos-learndash' ),
@@ -173,9 +176,6 @@ class BadgeOS_LearnDash {
 	 * @since 1.0.0
 	 */
 	public function plugins_loaded() {
-		// Load translations
-		load_plugin_textdomain( 'badgeos-learndash', false, dirname( $this->basename ) . '/languages/' );
-
 		if ( $this->meets_requirements() ) {
 			require_once( $this->directory_path . '/includes/rules-engine.php' );
 			require_once( $this->directory_path . '/includes/steps-ui.php' );
