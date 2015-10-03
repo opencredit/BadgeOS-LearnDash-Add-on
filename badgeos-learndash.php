@@ -105,13 +105,13 @@ class BadgeOS_LearnDash {
 			 * Default action split will be badgeos_learndash_{$action}, can set multiple actions with 'actions'
 			 *
 			 * 'original_action' => array(
-			 * 	'priority' => 12,
-			 * 	'accepted_args' => 5,
-			 * 	'actions' => array(
-			 * 		'another_action1'
-			 * 		'another_action2'
-			 * 		'another_action3'
-			 * 	)
+			 * 'priority' => 12,
+			 * 'accepted_args' => 5,
+			 * 'actions' => array(
+			 * 'another_action1'
+			 * 'another_action2'
+			 * 'another_action3'
+			 * )
 			 * )
 			 *
 			 *
