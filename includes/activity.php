@@ -1,8 +1,11 @@
 <?php
 /**
- * Adds meta box to achievement types for turning on/off LearnDash activity posts when a user earns an achievement
+ * Adds meta box to achievement types for turning on/off LearnDash activity posts when a user earns an achievement.
  *
  * @since 1.1.0
+ *
+ * @param array $meta_boxes Metaboxes array for CMB1.
+ * @return array $meta_boxes
  */
 function badgeos_learndash_custom_metaboxes( array $meta_boxes ) {
 
@@ -37,9 +40,9 @@ function badgeos_learndash_custom_metaboxes( array $meta_boxes ) {
 //add_filter( 'cmb_meta_boxes', 'badgeos_learndash_custom_metaboxes' );
 
 /**
- * Output LearnDash Achievements
+ * Output LearnDash Achievements.
  *
- * @param WP_User $user
+ * @param WP_User $user WP_User object.
  *
  * @since 1.1.0
  */
@@ -92,13 +95,12 @@ function badgeos_learndash_learner_profile( $user ) {
 //add_action( 'learndash_learner_profile', 'badgeos_learndash_learner_profile', 10, 1 );
 
 /**
- * Filter step titles to link to LearnDash objects
+ * Filter step titles to link to LearnDash objects.
  *
  * @since  1.0.0
  *
  * @param  string $title Our step title
  * @param  object $step  Our step's post object
- *
  * @return string        Our potentially updated title
  */
 function badgeos_learndash_step_link_title_to_object( $title = '', $step = null ) {
