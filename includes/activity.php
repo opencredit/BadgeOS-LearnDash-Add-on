@@ -12,9 +12,6 @@ function badgeos_learndash_custom_metaboxes( array $meta_boxes ) {
 	// Start with an underscore to hide fields from custom fields list
 	$prefix = '_badgeos_';
 
-	// Setup our $post_id, if available
-	$post_id = isset( $_GET[ 'post' ] ) ? $_GET[ 'post' ] : 0;
-
 	// New Achievement Types
 	$meta_boxes[] = array(
 		'id' => 'learndash_achievement_type_data',
