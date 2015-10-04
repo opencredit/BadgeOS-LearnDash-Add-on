@@ -1,6 +1,6 @@
 <?php
 /**
- * Custom Achievement Rules
+ * Custom Achievement Rules.
  *
  * @package BadgeOS LearnDash
  * @subpackage Achievements
@@ -10,7 +10,7 @@
  */
 
 /**
- * Load up our LearnDash triggers so we can add actions to them
+ * Load up our LearnDash triggers so we can add actions to them.
  *
  * @since 1.0.0
  */
@@ -39,7 +39,7 @@ function badgeos_learndash_load_triggers() {
 add_action( 'init', 'badgeos_learndash_load_triggers' );
 
 /**
- * Handle each of our LearnDash triggers
+ * Handle each of our LearnDash triggers.
  *
  * @since 1.0.0
  */
@@ -95,18 +95,18 @@ function badgeos_learndash_trigger_event() {
 }
 
 /**
- * Check if user deserves a LearnDash trigger step
+ * Check if user deserves a LearnDash trigger step.
  *
  * @since  1.0.0
  *
- * @param  bool $return         Whether or not the user deserves the step
- * @param  integer $user_id        The given user's ID
- * @param  integer $achievement_id The given achievement's post ID
- * @param  string $trigger        The trigger
- * @param  integer $site_id        The triggered site id
- * @param  array $args        The triggered args
+ * @param  bool    $return         Whether or not the user deserves the step.
+ * @param  integer $user_id        The given user's ID.
+ * @param  integer $achievement_id The given achievement's post ID.
+ * @param  string  $this_trigger   The trigger.
+ * @param  integer $site_id        The triggered site id.
+ * @param  array   $args           The triggered args.
  *
- * @return bool                    True if the user deserves the step, false otherwise
+ * @return bool                    True if the user deserves the step, false otherwise.
  */
 function badgeos_learndash_user_deserves_learndash_step( $return, $user_id, $achievement_id, $this_trigger = '', $site_id = 1, $args = array() ) {
 
