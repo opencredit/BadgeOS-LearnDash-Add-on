@@ -430,55 +430,55 @@ function badgeos_learndash_step_js() {
 		} );
 
 		function badgeos_learndash_step_change( $this ) {
-				var trigger_parent = $this.parent(),
-					trigger_value = trigger_parent.find( '.select-learndash-trigger' ).val();
+			var trigger_parent = $this.parent(),
+				trigger_value = trigger_parent.find( '.select-learndash-trigger' ).val();
 
-				// Quiz specific
-				trigger_parent.find( '.select-quiz-id' )
-					.toggle(
-						( 'learndash_quiz_completed' == trigger_value
-						 || 'badgeos_learndash_quiz_completed_specific' == trigger_value
-						 || 'badgeos_learndash_quiz_completed_fail' == trigger_value )
-					);
+			// Quiz specific
+			trigger_parent.find( '.select-quiz-id' )
+				.toggle(
+					( 'learndash_quiz_completed' == trigger_value
+					 || 'badgeos_learndash_quiz_completed_specific' == trigger_value
+					 || 'badgeos_learndash_quiz_completed_fail' == trigger_value )
+				);
 
-				// Lesson specific
-				trigger_parent.find( '.select-lesson-id' )
-					.toggle( 'learndash_lesson_completed' == trigger_value );
+			// Lesson specific
+			trigger_parent.find( '.select-lesson-id' )
+				.toggle( 'learndash_lesson_completed' == trigger_value );
 
-				// Topic specific
-				trigger_parent.find( '.select-topic-id' )
-					.toggle( 'learndash_topic_completed' == trigger_value );
+			// Topic specific
+			trigger_parent.find( '.select-topic-id' )
+				.toggle( 'learndash_topic_completed' == trigger_value );
 
-				// Course specific
-				trigger_parent.find( '.select-course-id' )
-					.toggle( 'learndash_course_completed' == trigger_value );
+			// Course specific
+			trigger_parent.find( '.select-course-id' )
+				.toggle( 'learndash_course_completed' == trigger_value );
 
-				// Course Category specific
-				trigger_parent.find( '.select-course-category-id' )
-					.toggle( 'badgeos_learndash_course_completed_tag' == trigger_value );
+			// Course Category specific
+			trigger_parent.find( '.select-course-category-id' )
+				.toggle( 'badgeos_learndash_course_completed_tag' == trigger_value );
 
-				// Quiz Grade specific
-				trigger_parent.find( '.input-quiz-grade' ).parent() // target parent span
-					.toggle( 'badgeos_learndash_quiz_completed_specific' == trigger_value );
+			// Quiz Grade specific
+			trigger_parent.find( '.input-quiz-grade' ).parent() // target parent span
+				.toggle( 'badgeos_learndash_quiz_completed_specific' == trigger_value );
 
-				if ( ( 'learndash_quiz_completed' == trigger_value
-					   && '' != trigger_parent.find( '.select-quiz-id' ).val() )
-					 || ( 'badgeos_learndash_quiz_completed_specific' == trigger_value
-					   && '' != trigger_parent.find( '.select-quiz-id' ).val() )
-					 || ( 'badgeos_learndash_quiz_completed_fail' == trigger_value
-					   && '' != trigger_parent.find( '.select-quiz-id' ).val() )
-					 || ( 'learndash_lesson_completed' == trigger_value
-						  && '' != trigger_parent.find( '.select-lesson-id' ).val() )
-					 || ( 'learndash_topic_completed' == trigger_value
-						  && '' != trigger_parent.find( '.select-topic-id' ).val() )
-					 || ( 'learndash_course_completed' == trigger_value
-						  && '' != trigger_parent.find( '.select-course-id' ).val() )
-					 || ( 'badgeos_learndash_course_completed_tag' == trigger_value
-						  && '' != trigger_parent.find( '.select-course-category-id' ).val() ) ) {
-					trigger_parent.find( '.required-count' )
-						.val( '1' )
-						.prop( 'disabled', true );
-				}
+			if ( ( 'learndash_quiz_completed' == trigger_value
+				   && '' != trigger_parent.find( '.select-quiz-id' ).val() )
+				 || ( 'badgeos_learndash_quiz_completed_specific' == trigger_value
+				   && '' != trigger_parent.find( '.select-quiz-id' ).val() )
+				 || ( 'badgeos_learndash_quiz_completed_fail' == trigger_value
+				   && '' != trigger_parent.find( '.select-quiz-id' ).val() )
+				 || ( 'learndash_lesson_completed' == trigger_value
+					  && '' != trigger_parent.find( '.select-lesson-id' ).val() )
+				 || ( 'learndash_topic_completed' == trigger_value
+					  && '' != trigger_parent.find( '.select-topic-id' ).val() )
+				 || ( 'learndash_course_completed' == trigger_value
+					  && '' != trigger_parent.find( '.select-course-id' ).val() )
+				 || ( 'badgeos_learndash_course_completed_tag' == trigger_value
+					  && '' != trigger_parent.find( '.select-course-category-id' ).val() ) ) {
+				trigger_parent.find( '.required-count' )
+					.val( '1' )
+					.prop( 'disabled', true );
+			}
 		}
 	</script>
 <?php
