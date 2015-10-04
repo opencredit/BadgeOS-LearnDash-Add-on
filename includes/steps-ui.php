@@ -392,9 +392,20 @@ function badgeos_learndash_step_js() {
 				// Show our group selector if we're awarding based on a specific group
 				if ( 'learndash_trigger' == trigger_type.val() ) {
 					trigger_type.siblings( '.select-learndash-trigger' ).show().change();
+					var trigger = $('.select-learndash-trigger').val();
+					if ( 'badgeos_learndash_quiz_completed_specific'  == trigger ) {
+						$('.input-quiz-grade').parent().show();
+					}
 				}
 				else {
-					trigger_type.siblings( '.select-learndash-trigger' ).hide().change();
+					trigger_type.siblings('.select-learndash-trigger').hide().change();
+					var fields = ['quiz','lesson','topic','course','course-category'];
+					$(fields).each( function(i,field){
+						//$('select.select-'+field+'-id').css('display','none');
+						$('.select-' + field + '-id').hide();
+					});
+					$('.input-quiz-grade').parent().hide();
+					$('.required-count').val('').prop('disabled', false);
 				}
 
 			} );
