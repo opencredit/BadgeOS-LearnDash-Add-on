@@ -3,8 +3,8 @@ Contributors: badgeos, learningtimes, webdevstudios
 Donate link: http://badgeos.org/contribute/donate/
 Tags: learndash, badge, badges, openbadges, learningtimes, OBI, mozilla, open badges, achievement, award, reward, engagement, submission, nomination, API, open credit, credit
 Requires at least: WordPress 3.5 & BadgeOS 1.2
-Tested up to: 3.6
-Stable tag: 1.0.0
+Tested up to: 4.3.1
+Stable tag: 1.0.1
 License: GNU AGPLv3
 License URI: http://www.gnu.org/licenses/agpl-3.0.html
 
@@ -30,7 +30,7 @@ In addition to all of the out-of-the-box features in BadgeOS core, the BadgeOS L
 *   **Courses:**
 
    *   Complete a specific Course
-   *   Complete any Course   
+   *   Complete any Course
    *   Complete a course from a specific Tag
 
 *   **Lessons:**
@@ -61,7 +61,7 @@ In addition to all of the out-of-the-box features in BadgeOS core, the BadgeOS L
 
 **Display Badges on User Profiles with Free Community Add-on **
 
-*   Activate the free "[BadgeOS Community Add-On](http://wordpress.org/plugins/badgeos-community-add-on/ "BadgeOS Community Add-on")" and "[BuddyPress](http://wordpress.org/plugins/buddypress/ "BuddyPress")" plugins to add a range of user community functions, including the ability to display earned badges and achievements on user profiles for others to see. 
+*   Activate the free "[BadgeOS Community Add-On](http://wordpress.org/plugins/badgeos-community-add-on/ "BadgeOS Community Add-on")" and "[BuddyPress](http://wordpress.org/plugins/buddypress/ "BuddyPress")" plugins to add a range of user community functions, including the ability to display earned badges and achievements on user profiles for others to see.
 
 
 = Extensibility and Additional BadgeOS Add-ons =
@@ -131,11 +131,19 @@ Thanks for asking!  Please do share back code modifications or enhancements you 
 
 == Changelog ==
 
+= 1.0.1 =
+* Fixed: Issues with LearnDash steps UI not hiding when switching to non-LearnDash based step type.
+* Fixed: Step count field not re-enabling when switching to non-LearnDash based step type.
+
 = 1.0 =
 * BadgeOS LearnDash Add-on says "hello learndash", earns "Hello LearnDash" badge.
 
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+* Fixed: Issues with LearnDash steps UI not hiding when switching to non-LearnDash based step type.
+* Fixed: Step count field not re-enabling when switching to non-LearnDash based step type.
 
 = 1.0 =
 * Initial release
