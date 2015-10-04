@@ -1,6 +1,6 @@
 <?php
 /**
- * Custom Achievement Steps UI
+ * Custom Achievement Steps UI.
  *
  * @package BadgeOS LearnDash
  * @subpackage Achievements
@@ -10,14 +10,14 @@
  */
 
 /**
- * Update badgeos_get_step_requirements to include our custom requirements
+ * Update badgeos_get_step_requirements to include our custom requirements.
  *
  * @since  1.0.0
  *
- * @param  array $requirements The current step requirements
- * @param  integer $step_id      The given step's post ID
+ * @param  array   $requirements The current step requirements.
+ * @param  integer $step_id      The given step's post ID.
  *
- * @return array                 The updated step requirements
+ * @return array                 The updated step requirements.
  */
 function badgeos_learndash_step_requirements( $requirements, $step_id ) {
 
@@ -34,11 +34,11 @@ function badgeos_learndash_step_requirements( $requirements, $step_id ) {
 add_filter( 'badgeos_get_step_requirements', 'badgeos_learndash_step_requirements', 10, 2 );
 
 /**
- * Filter the BadgeOS Triggers selector with our own options
+ * Filter the BadgeOS Triggers selector with our own options.
  *
  * @since  1.0.0
  *
- * @param  array $triggers The existing triggers array
+ * @param  array $triggers The existing triggers array.
  *
  * @return array           The updated triggers array
  */
@@ -53,12 +53,12 @@ function badgeos_learndash_activity_triggers( $triggers ) {
 add_filter( 'badgeos_activity_triggers', 'badgeos_learndash_activity_triggers' );
 
 /**
- * Add LearnDash Triggers selector to the Steps UI
+ * Add LearnDash Triggers selector to the Steps UI.
  *
  * @since 1.0.0
  *
- * @param integer $step_id The given step's post ID
- * @param integer $post_id The given parent post's post ID
+ * @param integer $step_id The given step's post ID.
+ * @param integer $post_id The given parent post's post ID.
  */
 function badgeos_learndash_step_learndash_trigger_select( $step_id, $post_id ) {
 
@@ -97,12 +97,12 @@ function badgeos_learndash_step_learndash_trigger_select( $step_id, $post_id ) {
 add_action( 'badgeos_steps_ui_html_after_trigger_type', 'badgeos_learndash_step_learndash_trigger_select', 10, 2 );
 
 /**
- * Add a BuddyPress group selector to the Steps UI
+ * Add a BuddyPress group selector to the Steps UI.
  *
  * @since 1.0.0
  *
- * @param integer $step_id The given step's post ID
- * @param integer $post_id The given parent post's post ID
+ * @param integer $step_id The given step's post ID.
+ * @param integer $post_id The given parent post's post ID.
  */
 function badgeos_learndash_step_etc_select( $step_id, $post_id ) {
 
@@ -244,15 +244,15 @@ function badgeos_learndash_step_etc_select( $step_id, $post_id ) {
 add_action( 'badgeos_steps_ui_html_after_trigger_type', 'badgeos_learndash_step_etc_select', 10, 2 );
 
 /**
- * AJAX Handler for saving all steps
+ * AJAX Handler for saving all steps.
  *
  * @since  1.0.0
  *
- * @param  string $title     The original title for our step
- * @param  integer $step_id   The given step's post ID
- * @param  array $step_data Our array of all available step data
+ * @param  string  $title     The original title for our step.
+ * @param  integer $step_id   The given step's post ID.
+ * @param  array   $step_data Our array of all available step data.
  *
- * @return string             Our potentially updated step title
+ * @return string             Our potentially updated step title.
  */
 function badgeos_learndash_save_step( $title, $step_id, $step_data ) {
 
@@ -374,7 +374,7 @@ function badgeos_learndash_save_step( $title, $step_id, $step_data ) {
 add_filter( 'badgeos_save_step', 'badgeos_learndash_save_step', 10, 3 );
 
 /**
- * Include custom JS for the BadgeOS Steps UI
+ * Include custom JS for the BadgeOS Steps UI.
  *
  * @since 1.0.0
  */
@@ -483,5 +483,4 @@ function badgeos_learndash_step_js() {
 	</script>
 <?php
 }
-
 add_action( 'admin_footer', 'badgeos_learndash_step_js' );
