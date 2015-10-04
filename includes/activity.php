@@ -50,7 +50,8 @@ function badgeos_learndash_learner_profile( $user ) {
 	$achievement_types = badgeos_get_network_achievement_types_for_user( $user->ID );
 
 	// Eliminate step cpt from array
-	if ( ( $key = array_search( 'step', $achievement_types ) ) !== false ) {
+	$key = array_search( 'step', $achievement_types );
+	if ( $key !== false ) {
 		unset( $achievement_types[ $key ] );
 
 		$achievement_types = array_values( $achievement_types );
