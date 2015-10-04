@@ -472,20 +472,13 @@ function badgeos_learndash_step_js() {
 			trigger_parent.find( '.input-quiz-grade' ).parent() // target parent span
 				.toggle( 'badgeos_learndash_quiz_completed_specific' == trigger_value );
 
-			if ( ( 'learndash_quiz_completed' == trigger_value
-				   && '' != trigger_parent.find( '.select-quiz-id' ).val() )
-				 || ( 'badgeos_learndash_quiz_completed_specific' == trigger_value
-				   && '' != trigger_parent.find( '.select-quiz-id' ).val() )
-				 || ( 'badgeos_learndash_quiz_completed_fail' == trigger_value
-				   && '' != trigger_parent.find( '.select-quiz-id' ).val() )
-				 || ( 'learndash_lesson_completed' == trigger_value
-					  && '' != trigger_parent.find( '.select-lesson-id' ).val() )
-				 || ( 'learndash_topic_completed' == trigger_value
-					  && '' != trigger_parent.find( '.select-topic-id' ).val() )
-				 || ( 'learndash_course_completed' == trigger_value
-					  && '' != trigger_parent.find( '.select-course-id' ).val() )
-				 || ( 'badgeos_learndash_course_completed_tag' == trigger_value
-					  && '' != trigger_parent.find( '.select-course-category-id' ).val() ) ) {
+			if ( ( 'learndash_quiz_completed' == trigger_value && '' != trigger_parent.find( '.select-quiz-id' ).val() )
+			|| ( 'badgeos_learndash_quiz_completed_specific' == trigger_value && '' != trigger_parent.find( '.select-quiz-id' ).val() )
+			|| ( 'badgeos_learndash_quiz_completed_fail' == trigger_value && '' != trigger_parent.find( '.select-quiz-id' ).val() )
+			|| ( 'learndash_lesson_completed' == trigger_value && '' != trigger_parent.find( '.select-lesson-id' ).val() )
+			|| ( 'learndash_topic_completed' == trigger_value && '' != trigger_parent.find( '.select-topic-id' ).val() )
+			|| ( 'learndash_course_completed' == trigger_value && '' != trigger_parent.find( '.select-course-id' ).val() )
+			|| ( 'badgeos_learndash_course_completed_tag' == trigger_value && '' != trigger_parent.find( '.select-course-category-id' ).val() ) ) {
 				trigger_parent.find( '.required-count' )
 					.val( '1' )
 					.prop( 'disabled', true );
