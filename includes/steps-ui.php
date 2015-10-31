@@ -405,7 +405,7 @@ function badgeos_learndash_step_js() {
 						$('.select-' + field + '-id').hide();
 					});
 					$('.input-quiz-grade').parent().hide();
-					$('.required-count').val('').prop('disabled', false);
+					$('.required-count').prop('disabled', false);
 				}
 
 			} );
@@ -484,7 +484,6 @@ function badgeos_learndash_step_js() {
 					.prop( 'disabled', true );
 			} else {
 				trigger_parent.find('.required-count')
-					.val('')
 					.prop('disabled', false);
 			}
 		}
