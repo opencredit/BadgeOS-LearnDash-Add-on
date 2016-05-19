@@ -1,5 +1,5 @@
 === BadgeOS LearnDash Add-on ===
-Contributors: badgeos, learningtimes, webdevstudios
+Contributors: badgeos, learningtimes
 Donate link: http://badgeos.org/contribute/donate/
 Tags: learndash, badge, badges, openbadges, learningtimes, OBI, mozilla, open badges, achievement, award, reward, engagement, submission, nomination, API, open credit, credit
 Requires at least: WordPress 3.5 & BadgeOS 1.2
