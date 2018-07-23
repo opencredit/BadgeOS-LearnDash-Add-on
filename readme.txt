@@ -3,8 +3,8 @@ Contributors: badgeos, learningtimes
 Donate link: http://badgeos.org/contribute/donate/
 Tags: learndash, badge, badges, openbadges, learningtimes, OBI, mozilla, open badges, achievement, award, reward, engagement, submission, nomination, API, open credit, credit
 Requires at least: WordPress 3.5 & BadgeOS 1.2
-Tested up to: 4.3.1
-Stable tag: 1.0.1
+Tested up to: 4.5.3
+Stable tag: 1.0.2
 License: GNU AGPLv3
 License URI: http://www.gnu.org/licenses/agpl-3.0.html
 
@@ -131,6 +131,9 @@ Thanks for asking!  Please do share back code modifications or enhancements you 
 
 == Changelog ==
 
+= 1.0.2 =
+* Fixed: Issues changing the amount of times a step must be completed for non-LearnDash activities.
+
 = 1.0.1 =
 * Fixed: Issues with LearnDash steps UI not hiding when switching to non-LearnDash based step type.
 * Fixed: Step count field not re-enabling when switching to non-LearnDash based step type.
@@ -140,6 +143,9 @@ Thanks for asking!  Please do share back code modifications or enhancements you 
 
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+* Fixed: Issues changing the amount of times a step must be completed for non-LearnDash activities.
 
 = 1.0.1 =
 * Fixed: Issues with LearnDash steps UI not hiding when switching to non-LearnDash based step type.

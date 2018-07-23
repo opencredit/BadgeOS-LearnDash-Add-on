@@ -1,6 +1,6 @@
 <?php
 /**
- * Custom Achievement Rules.
+ * Custom Achievement Rules
  *
  * @package BadgeOS LearnDash
  * @subpackage Achievements
@@ -10,7 +10,7 @@
  */
 
 /**
- * Load up our LearnDash triggers so we can add actions to them.
+ * Load up our LearnDash triggers so we can add actions to them
  *
  * @since 1.0.0
  */
@@ -39,7 +39,7 @@ function badgeos_learndash_load_triggers() {
 add_action( 'init', 'badgeos_learndash_load_triggers' );
 
 /**
- * Handle each of our LearnDash triggers.
+ * Handle each of our LearnDash triggers
  *
  * @since 1.0.0
  */
@@ -53,12 +53,12 @@ function badgeos_learndash_trigger_event() {
 
 	$userID = get_current_user_id();
 
-	if ( is_array( $args ) && isset( $args[ 0 ] ) && isset( $args[ 0 ][ 'user' ] ) ) {
-		if ( is_object( $args[ 0 ][ 'user' ] ) ) {
-			$userID = (int) $args[ 0 ][ 'user' ]->ID;
+	if ( is_array( $args ) && isset( $args[ 'user' ] ) ) {
+		if ( is_object( $args[ 'user' ] ) ) {
+			$userID = (int) $args[ 'user' ]->ID;
 		}
 		else {
-			$userID = (int) $args[ 0 ][ 'user' ];
+			$userID = (int) $args[ 'user' ];
 		}
 	}
 
@@ -95,18 +95,18 @@ function badgeos_learndash_trigger_event() {
 }
 
 /**
- * Check if user deserves a LearnDash trigger step.
+ * Check if user deserves a LearnDash trigger step
  *
  * @since  1.0.0
  *
- * @param  bool    $return         Whether or not the user deserves the step.
- * @param  integer $user_id        The given user's ID.
- * @param  integer $achievement_id The given achievement's post ID.
- * @param  string  $this_trigger   The trigger.
- * @param  integer $site_id        The triggered site id.
- * @param  array   $args           The triggered args.
+ * @param  bool $return         Whether or not the user deserves the step
+ * @param  integer $user_id        The given user's ID
+ * @param  integer $achievement_id The given achievement's post ID
+ * @param  string $trigger        The trigger
+ * @param  integer $site_id        The triggered site id
+ * @param  array $args        The triggered args
  *
- * @return bool                    True if the user deserves the step, false otherwise.
+ * @return bool                    True if the user deserves the step, false otherwise
  */
 function badgeos_learndash_user_deserves_learndash_step( $return, $user_id, $achievement_id, $this_trigger = '', $site_id = 1, $args = array() ) {
 
@@ -143,12 +143,11 @@ function badgeos_learndash_user_deserves_learndash_step( $return, $user_id, $ach
 
 		// Object-specific triggers
 		$learndash_object_triggers = array(
-			'learndash_quiz_completed' => 'quiz',
-			'badgeos_learndash_quiz_completed_specific' => 'quiz',
-			'badgeos_learndash_quiz_completed_fail' => 'quiz',
-			'learndash_lesson_completed' => 'lesson',
-			'learndash_topic_completed' => 'topic',
-			'learndash_course_completed' => 'course'
+			'learndash_quiz_completed',
+			'badgeos_learndash_quiz_completed_specific',
+			'badgeos_learndash_quiz_completed_fail',
+			'learndash_lesson_completed',
+			'learndash_course_completed'
 		);
 
 		// Category-specific triggers
@@ -156,13 +155,28 @@ function badgeos_learndash_user_deserves_learndash_step( $return, $user_id, $ach
 			'badgeos_learndash_course_completed_tag'
 		);
 
+		// Quiz-specific triggers
+		$learndash_quiz_triggers = array(
+			'learndash_quiz_completed',
+			'badgeos_learndash_quiz_completed_specific',
+			'badgeos_learndash_quiz_completed_fail'
+		);
+
 		// Triggered object ID (used in these hooks, generally 2nd arg)
 		$triggered_object_id = 0;
 
 		$arg_data = $args[ 0 ];
 
-		if ( is_array( $arg_data ) && isset( $learndash_object_triggers[ $learndash_trigger ] ) && isset( $arg_data[ $learndash_object_triggers[ $learndash_trigger ] ] ) && !empty( $arg_data[ $learndash_object_triggers[ $learndash_trigger ] ] ) ) {
-			$triggered_object_id = (int) $arg_data[ $learndash_object_triggers[ $learndash_trigger ] ]->ID;
+		if ( is_array( $arg_data ) ) {
+			if ( isset( $arg_data[ 'quiz' ] ) ) {
+				$triggered_object_id = (int) $arg_data[ 'quiz' ]->ID;
+			}
+			elseif ( isset( $arg_data[ 'lesson' ] ) ) {
+				$triggered_object_id = (int) $arg_data[ 'lesson' ]->ID;
+			}
+			elseif ( isset( $arg_data[ 'course' ] ) ) {
+				$triggered_object_id = (int) $arg_data[ 'course' ]->ID;
+			}
 		}
 
 		// Use basic trigger logic if no object set
@@ -170,7 +184,7 @@ function badgeos_learndash_user_deserves_learndash_step( $return, $user_id, $ach
 			$learndash_triggered = true;
 		}
 		// Object specific
-		elseif ( $triggered_object_id == $object_id ) {
+		elseif ( in_array( $learndash_trigger, $learndash_object_triggers ) && $triggered_object_id == $object_id ) {
 			$learndash_triggered = true;
 
 			// Forcing count due to BadgeOS bug tracking triggers properly
@@ -185,7 +199,7 @@ function badgeos_learndash_user_deserves_learndash_step( $return, $user_id, $ach
 		}
 
 		// Quiz triggers
-		if ( $learndash_triggered && isset( $learndash_object_triggers[ $learndash_trigger ] ) && 'quiz' == $learndash_object_triggers[ $learndash_trigger ] ) {
+		if ( $learndash_triggered && in_array( $learndash_trigger, $learndash_quiz_triggers ) ) {
 			// Check for fail
 			if ( 'badgeos_learndash_quiz_completed_fail' == $learndash_trigger ) {
 				if ( $arg_data[ 'pass' ] ) {
@@ -217,12 +231,6 @@ function badgeos_learndash_user_deserves_learndash_step( $return, $user_id, $ach
 				// OK, you can pass go now
 				$return = true;
 			}
-		}
-
-		if ( $learndash_triggered && $return ) {
-			$user_data = get_userdata( $user_id );
-
-			badgeos_post_log_entry( null, $user_id, null, sprintf( __( '%1$s deserves %2$s', 'badgeos' ), $user_data->user_login, $this_trigger ) );
 		}
 	}
 

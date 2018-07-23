@@ -4,9 +4,9 @@
  * Plugin URI: http://www.learndash.com/
  * Description: This BadgeOS add-on integrates BadgeOS features with LearnDash
  * Tags: learndash
- * Author: Credly
- * Version: 1.0.1
- * Author URI: https://credly.com/
+ * Author: LearningTimes, LLC
+ * Version: 1.0.2
+ * Author URI: http://www.learningtimes.com/
  * License: GNU AGPLv3
  * License URI: http://www.gnu.org/licenses/agpl-3.0.html
  */
@@ -77,16 +77,12 @@ class BadgeOS_LearnDash {
 		// If BadgeOS is unavailable, deactivate our plugin
 		add_action( 'admin_notices', array( $this, 'maybe_disable_plugin' ) );
 
-		// Load translations
-		load_plugin_textdomain( 'badgeos-learndash', false, dirname( $this->basename ) . '/languages/' );
-
 		// LearnDash Action Hooks
 		$this->triggers = array(
 			'learndash_quiz_completed' => __( 'Passed Quiz', 'badgeos-learndash' ),
 			'badgeos_learndash_quiz_completed_specific' => __( 'Minimum % Grade on a Quiz', 'badgeos-learndash' ),
 			'badgeos_learndash_quiz_completed_fail' => __( 'Fails Quiz', 'badgeos-learndash' ),
 			'learndash_lesson_completed' => __( 'Completed Lesson', 'badgeos-learndash' ),
-			'learndash_topic_completed' => __( 'Completed Topic', 'badgeos-learndash' ),
 			'learndash_course_completed' => __( 'Completed Course', 'badgeos-learndash' ),
 			'badgeos_learndash_course_completed_tag' => __( 'Completed Course from a Tag', 'badgeos-learndash' )
 		);
@@ -105,13 +101,13 @@ class BadgeOS_LearnDash {
 			 * Default action split will be badgeos_learndash_{$action}, can set multiple actions with 'actions'
 			 *
 			 * 'original_action' => array(
-			 * 'priority' => 12,
-			 * 'accepted_args' => 5,
-			 * 'actions' => array(
-			 * 'another_action1'
-			 * 'another_action2'
-			 * 'another_action3'
-			 * )
+			 * 	'priority' => 12,
+			 * 	'accepted_args' => 5,
+			 * 	'actions' => array(
+			 * 		'another_action1'
+			 * 		'another_action2'
+			 * 		'another_action3'
+			 * 	)
 			 * )
 			 *
 			 *
@@ -176,10 +172,12 @@ class BadgeOS_LearnDash {
 	 * @since 1.0.0
 	 */
 	public function plugins_loaded() {
+		// Load translations
+		load_plugin_textdomain( 'badgeos-learndash', false, dirname( $this->basename ) . '/languages/' );
+
 		if ( $this->meets_requirements() ) {
 			require_once( $this->directory_path . '/includes/rules-engine.php' );
 			require_once( $this->directory_path . '/includes/steps-ui.php' );
-			require_once( $this->directory_path . '/includes/activity.php' );
 
 			$this->action_forwarding();
 		}
