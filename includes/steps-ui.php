@@ -198,7 +198,7 @@ function badgeos_learndash_step_etc_select( $step_id, $post_id ) {
 	echo '<option value="">' . __( 'Any Course Tag', 'badgeos-learndash' ) . '</option>';
 
 	// Loop through all objects
-	$objects = get_terms( 'post_tag', array(
+	$objects = get_terms( 'ld_course_tag', array(
 		'hide_empty' => false
 	) );
 
@@ -320,7 +320,7 @@ function badgeos_learndash_save_step( $title, $step_id, $step_data ) {
 				$title = __( 'Completed course in any tag', 'badgeos-learndash' );
 			}
 			else {
-				$title = sprintf( __( 'Completed course in tag "%s"', 'badgeos-learndash' ), get_term( $object_id, 'post_tag' )->name );
+				$title = sprintf( __( 'Completed course in tag "%s"', 'badgeos-learndash' ), get_term( $object_id, 'ld_course_tag' )->name );
 			}
 		}
 

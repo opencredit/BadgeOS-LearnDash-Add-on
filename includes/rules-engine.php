@@ -180,7 +180,7 @@ function badgeos_learndash_user_deserves_learndash_step( $return, $user_id, $ach
 		}
 
 		// Use basic trigger logic if no object set
-		if ( empty( $object_id ) ) {
+        if ( empty( $object_id ) && !in_array( $learndash_trigger, $learndash_category_triggers ) ) {
 			$learndash_triggered = true;
 		}
 		// Object specific
@@ -191,7 +191,7 @@ function badgeos_learndash_user_deserves_learndash_step( $return, $user_id, $ach
 			$requirements[ 'count' ] = 1;
 		}
 		// Category specific
-		elseif ( in_array( $learndash_trigger, $learndash_category_triggers ) && has_term( $object_id, 'post_tag', $triggered_object_id ) ) {
+        elseif ( in_array( $learndash_trigger, $learndash_category_triggers ) && has_term( $object_id, 'ld_course_tag', $triggered_object_id ) ) {
 			$learndash_triggered = true;
 
 			// Forcing count due to BadgeOS bug tracking triggers properly
