@@ -2,9 +2,9 @@
 Contributors: badgeos, learningtimes
 Donate link: http://badgeos.org/contribute/donate/
 Tags: learndash, badge, badges, openbadges, learningtimes, OBI, mozilla, open badges, achievement, award, reward, engagement, submission, nomination, API, open credit, credit
-Requires at least: WordPress 3.5 & BadgeOS 1.2
-Tested up to: 4.5.3
-Stable tag: 1.0.2
+Requires at least: WordPress 4.0 & BadgeOS 1.4.11 or higher
+Tested up to: 4.9.8
+Stable tag: 1.0.3
 License: GNU AGPLv3
 License URI: http://www.gnu.org/licenses/agpl-3.0.html
 
@@ -45,6 +45,7 @@ In addition to all of the out-of-the-box features in BadgeOS core, the BadgeOS L
    *   Achieve a minimum percent grade on a specific Quiz
    *   Achieve a minimum percent grade on any Quiz
    *   Fail a Quiz (i.e. useful for rewarding the passing of a previously failed quiz)
+   *   Fail a specific Quiz
 
 **Combine LearnDash Steps with BadgeOS Steps in Defining Achievements**
 
@@ -130,6 +131,10 @@ Thanks for asking!  Please do share back code modifications or enhancements you 
 
 
 == Changelog ==
+
+= 1.0.3 =
+* Fixed: badges was not awarding on completing course from specific tag.
+* Fixed: Made the plugin compatible with latest version of wordpress 4.9.8 and PHP version 7.2
 
 = 1.0.2 =
 * Fixed: Issues changing the amount of times a step must be completed for non-LearnDash activities.
