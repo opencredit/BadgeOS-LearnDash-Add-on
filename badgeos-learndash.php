@@ -5,7 +5,7 @@
  * Description: This BadgeOS add-on integrates BadgeOS features with LearnDash
  * Tags: learndash
  * Author: LearningTimes, LLC
- * Version: 1.0.3
+ * Version: 1.0.4
  * Author URI: http://www.learningtimes.com/
  * License: GNU AGPLv3
  * License URI: http://www.gnu.org/licenses/agpl-3.0.html

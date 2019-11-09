@@ -1,10 +1,10 @@
 === BadgeOS LearnDash Add-on ===
-Contributors: badgeos, learningtimes
+Contributors: badgeos, learningtimes, farooqabdullah
 Donate link: http://badgeos.org/contribute/donate/
 Tags: learndash, badge, badges, openbadges, learningtimes, OBI, mozilla, open badges, achievement, award, reward, engagement, submission, nomination, API, open credit, credit
-Requires at least: WordPress 4.0 & BadgeOS 1.4.11 or higher
-Tested up to: 4.9.8
-Stable tag: 1.0.3
+Requires at least: WordPress 4.0 & BadgeOS 3.0 or higher
+Tested up to: 5.2.4
+Stable tag: 1.0.4
 License: GNU AGPLv3
 License URI: http://www.gnu.org/licenses/agpl-3.0.html
 
@@ -132,9 +132,14 @@ Thanks for asking!  Please do share back code modifications or enhancements you 
 
 == Changelog ==
 
+= 1.0.4 =
+* New: Added option to award only points on completing LearnDash events
+* New: Added option to award ranks on completing learndash events
+* Fix: Made add-on compatible with latest version of LearnDash and WordPress
+
 = 1.0.3 =
-* Fixed: badges was not awarding on completing course from specific tag.
-* Fixed: Made the plugin compatible with latest version of wordpress 4.9.8 and PHP version 7.2
+* Fixed: Badges was not awarding on completing course from specific tag.
+* Fixed: Made the plugin compatible with latest version of WordPress 4.9.8 and PHP version 7.2
 
 = 1.0.2 =
 * Fixed: Issues changing the amount of times a step must be completed for non-LearnDash activities.
