@@ -1,5 +1,5 @@
 <?php
-/**
+/** 
  * Custom Achievement Steps UI.
  *
  * @package BadgeOS LearnDash
@@ -30,7 +30,9 @@ function badgeos_learndash_step_requirements( $requirements, $step_id ) {
 	return $requirements;
 
 }
-
+add_filter( 'badgeos_get_deduct_step_requirements', 'badgeos_learndash_step_requirements', 10, 2 );
+add_filter( 'badgeos_get_rank_req_step_requirements', 'badgeos_learndash_step_requirements', 10, 2 );
+add_filter( 'badgeos_get_award_step_requirements', 'badgeos_learndash_step_requirements', 10, 2 );
 add_filter( 'badgeos_get_step_requirements', 'badgeos_learndash_step_requirements', 10, 2 );
 
 /**
@@ -47,10 +49,12 @@ function badgeos_learndash_activity_triggers( $triggers ) {
 	$triggers[ 'learndash_trigger' ] = __( 'LearnDash Activity', 'badgeos-learndash' );
 
 	return $triggers;
-
 }
 
 add_filter( 'badgeos_activity_triggers', 'badgeos_learndash_activity_triggers' );
+add_filter( 'badgeos_award_points_activity_triggers', 'badgeos_learndash_activity_triggers' );
+add_filter( 'badgeos_deduct_points_activity_triggers', 'badgeos_learndash_activity_triggers' );
+add_filter( 'badgeos_ranks_req_activity_triggers', 'badgeos_learndash_activity_triggers' );
 
 /**
  * Add LearnDash Triggers selector to the Steps UI.
@@ -95,6 +99,9 @@ function badgeos_learndash_step_learndash_trigger_select( $step_id, $post_id ) {
 }
 
 add_action( 'badgeos_steps_ui_html_after_trigger_type', 'badgeos_learndash_step_learndash_trigger_select', 10, 2 );
+add_action( 'badgeos_award_steps_ui_html_after_achievement_type', 'badgeos_learndash_step_learndash_trigger_select', 10, 2 );
+add_action( 'badgeos_deduct_steps_ui_html_after_trigger_type', 'badgeos_learndash_step_learndash_trigger_select', 10, 2 );
+add_action( 'badgeos_rank_req_steps_ui_html_after_trigger_type', 'badgeos_learndash_step_learndash_trigger_select', 10, 2 );
 
 /**
  * Add a BuddyPress group selector to the Steps UI.
@@ -218,6 +225,9 @@ function badgeos_learndash_step_etc_select( $step_id, $post_id ) {
 }
 
 add_action( 'badgeos_steps_ui_html_after_trigger_type', 'badgeos_learndash_step_etc_select', 10, 2 );
+add_action( 'badgeos_award_steps_ui_html_after_achievement_type', 'badgeos_learndash_step_etc_select', 10, 2 );
+add_action( 'badgeos_deduct_steps_ui_html_after_trigger_type', 'badgeos_learndash_step_etc_select', 10, 2 );
+add_action( 'badgeos_rank_req_steps_ui_html_after_trigger_type', 'badgeos_learndash_step_etc_select', 10, 2 );
 
 /**
  * AJAX Handler for saving all steps.
@@ -353,25 +363,26 @@ function badgeos_learndash_step_js() {
 			$( document ).on( 'change', '.select-trigger-type', function () {
 
 				var trigger_type = $( this );
-
+				var trigger_parent = trigger_type.parent();
+				
 				// Show our group selector if we're awarding based on a specific group
 				if ( 'learndash_trigger' == trigger_type.val() ) {
 					trigger_type.siblings( '.select-learndash-trigger' ).show().change();
-					var trigger = $('.select-learndash-trigger').val();
+					var trigger = trigger_parent.find('.select-learndash-trigger').val();
 					if ( 'badgeos_learndash_quiz_completed_specific'  == trigger ) {
-						$('.input-quiz-grade').parent().show();
+						trigger_parent.find('.input-quiz-grade').parent().show();
 					}
-					$('.required-count').val('1').prop('disabled', true);
+					trigger_parent.find('.required-count').val('1').prop('disabled', true);
 				}
 				else {
 					trigger_type.siblings('.select-learndash-trigger').hide().change();
 					var fields = ['quiz','lesson','course','course-category'];
 					$(fields).each( function(i,field){
 						//$('select.select-'+field+'-id').css('display','none');
-						$('.select-' + field + '-id').hide();
+						trigger_parent.find('.select-' + field + '-id').hide();
 					});
-					$('.input-quiz-grade').parent().hide();
-					$('.required-count').val(times).prop('disabled', false);
+					trigger_parent.find('.input-quiz-grade').parent().hide();
+					trigger_parent.find('.required-count').val(times).prop('disabled', false);
 				}
 
 			} );
@@ -405,6 +416,7 @@ function badgeos_learndash_step_js() {
 		} );
 
 		function badgeos_learndash_step_change( $this , times) {
+
 			var trigger_parent = $this.parent(),
 				trigger_value = trigger_parent.find( '.select-learndash-trigger' ).val();
 			var	trigger_parent_value = trigger_parent.find( '.select-trigger-type' ).val();
