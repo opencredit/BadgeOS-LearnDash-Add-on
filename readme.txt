@@ -3,8 +3,8 @@ Contributors: badgeos, learningtimes, farooqabdullah
 Donate link: http://badgeos.org/contribute/donate/
 Tags: learndash, badge, badges, openbadges, learningtimes, OBI, mozilla, open badges, achievement, award, reward, engagement, submission, nomination, API, open credit, credit
 Requires at least: WordPress 4.0 & BadgeOS 3.0 or higher
-Tested up to: 5.2.4
-Stable tag: 1.0.4
+Tested up to: 5.3.2
+Stable tag: 1.1
 License: GNU AGPLv3
 License URI: http://www.gnu.org/licenses/agpl-3.0.html
 
@@ -27,25 +27,54 @@ Earned badges are Open Badge compatible and sharable via [Credly](https://credly
 
 In addition to all of the out-of-the-box features in BadgeOS core, the BadgeOS LearnDash Add-on allows you to award achievements and badges based on these additional triggers:
 
+*   **LearnDash QUiz Points:**
+
+   *   Award LearnDash Quiz points as BadgeOS points
+   *   Multiply LD Quiz points with X before awarding as BadgeOS Points
+
+*   **Course Purchase:**
+
+   *   Purchase a specific Course
+   *   Purchase any Course
+
+*   **LearnDash Group:**
+
+   *   Enrolled into a specific LearnDash group
+   *   Enrolled any LearnDash group
+
 *   **Courses:**
 
    *   Complete a specific Course
    *   Complete any Course
-   *   Complete a course from a specific Tag
+   *   Complete a course having a specific Tag
+   *   Complete a course having any tag
 
 *   **Lessons:**
 
    *   Complete a specific Lesson
    *   Complete any Lesson
+   *   Complete a lesson having specific tag
+   *   Complete a lesson having any tag
+
+*   **Topics:**
+
+   *   Complete a specific Topic
+   *   Complete any Topic
+   *   Complete a topic having specific tag
+   *   Complete a topic having any tag
 
 *   **Quizzes:**
 
    *   Pass a specific Quiz
    *   Pass any Quiz
+   *   Pass quiz having specific tag
+   *   Pass quiz having any tag
    *   Achieve a minimum percent grade on a specific Quiz
    *   Achieve a minimum percent grade on any Quiz
    *   Fail a Quiz (i.e. useful for rewarding the passing of a previously failed quiz)
    *   Fail a specific Quiz
+   *   Fail quiz having specific tag
+   *   Fail quiz having any tag
 
 **Combine LearnDash Steps with BadgeOS Steps in Defining Achievements**
 
@@ -131,6 +160,30 @@ Thanks for asking!  Please do share back code modifications or enhancements you 
 
 
 == Changelog ==
+
+= 1.1 =
+* New: Option to award points/achievements/ranks on purchasing specific course
+* New: Option to award points/achievements/ranks on purchasing course
+* New: Option to award points/achievements/ranks on enrolling into any LearnDash group
+* New: Option to award points/achievements/ranks on enrolling into specific LearnDash group
+* New: Option to award points/achievements/ranks on completing courses having any tag
+* New: Option to award points/achievements/ranks on completing courses having specific tag
+* New: Option to award points/achievements/ranks on completing any course
+* New: Option to award points/achievements/ranks on completing specific course
+* New: Option to award points/achievements/ranks on completing lessons having any tag
+* New: Option to award points/achievements/ranks on completing lessons having specific tag
+* New: Option to award points/achievements/ranks on completing any lesson
+* New: Option to award points/achievements/ranks on completing specific lesson
+* New: Option to award points/achievements/ranks on completing topics having any tag
+* New: Option to award points/achievements/ranks on completing topics having specific tag
+* New: Option to award points/achievements/ranks on completing any topic
+* New: Option to award points/achievements/ranks on completing specific topic
+* New: Option to award points/achievements/ranks on completing quizzes having any tag
+* New: Option to award points/achievements/ranks on completing quizzes having specific tag
+* New: Option to award points/achievements/ranks on failing quizzes having any tag
+* New: Option to award points/achievements/ranks on failing quizzes having specific tag
+* New: Option to award LD quiz points as BadgeOS points
+* New: Option to multiply LD quiz points with x before award as BadgeOS Points
 
 = 1.0.4 =
 * New: Added option to award only points on completing LearnDash events
